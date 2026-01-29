@@ -42,7 +42,7 @@ function SignUp() {
                  Click Here
                </button>
              </p>
-           </div> 
+           </div>
 
 
            <div className="grid grid-cols-2 
