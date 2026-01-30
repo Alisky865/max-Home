@@ -118,7 +118,7 @@ body{
         position:absolute; left:0px;
         background:#D0E3FF;
         border-radius:2px;
-        width:3rem;
+        width:36px;
         height:3px;
         transition:All 1s ease; 
         cursor: pointer;
@@ -131,7 +131,7 @@ body{
         position:absolute; left:0px;
         background:#D0E3FF;
         border-radius:2px;
-        width:3rem;
+        width:36px;
         height:3px;
         transition:All 1s ease; 
         cursor: pointer;

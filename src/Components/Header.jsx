@@ -76,7 +76,7 @@ function Header() {
        </div>
 
        <div className="sideBarBtnBox hidden  flex-row flex-1 align-middle 
-         justify-end p-3 m-[5px]">
+         justify-end p-3 m-[5px]"> 
 
          <div className="sideBarBtn bg-[#D0E3FF] border-none 
            rounded-[2px] h-[3px] w-[36px] transition-[all_1s_ease] cursor-pointer relative my-[7px]" onClick={clickSideBar}>
