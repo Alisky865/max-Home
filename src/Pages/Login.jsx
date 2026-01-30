@@ -1,6 +1,7 @@
 
 import React from 'react';
 import '../styles/styling.css'
+import '../styles/responsive.css'
 
 
 function Login() {
@@ -16,12 +17,12 @@ function Login() {
     <>
 
      <section className="loginContainer z-[9] flex flex-col align-middle  
-       justify-center relative top-0 left-0 right-0 mt-[-25px] p-[35px]"  id="login-container">
+       justify-center relative top-0 left-0 right-0 p-[35px]"  id="login-container">
 
         <div className="loginBox self-center flex flex-col align-middle 
          px-[10px] py-[1px] border-[2px] border-[solid] 
          border-[#D0E3FF] bg-[#D0E3FF10] backdrop-blur-[4px] 
-         rounded-[7px] h-[400px] my-[50px]">
+         rounded-[10px] h-[400px] w-[max-content] my-[30px]">
 
            <h1 className="log-in-heading text-center text-[25px] 
              font-sans font-bold text-[#D0E3FF] my-[15px]">Log In
@@ -80,12 +81,12 @@ function Login() {
            <div className="flex flex-row align-middle 
              justify-between p-[2px]" id="check-box">
              <input className="cursor-pointer" id="check-box-input" type="checkbox" value="Agree" name="Agree"/>
-             <label htmlFor="Agree" className="ml-[3px] text-[#D0E3FF] font-sans font-normal ">Keep Me Logged in</label>
+             <label htmlFor="Agree" className="ml-[3px] text-[#D0E3FF] font-sans font-normal text-[11px] ">Keep Me Logged in</label>
            </div>
 
            <div className="flex flex-row align-middle 
              justify-between p-[2px] " id="forget-password-box">
-              <a href="#" className="text-black font-sans font-bold 
+              <a href="#" className="text-black text-[11px] font-sans font-bold 
                decoration-0">Forget Password ?</a>
            </div>
          </div>

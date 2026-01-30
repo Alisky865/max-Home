@@ -1,6 +1,7 @@
 
 import React from 'react';
 import '../styles/styling.css'
+import '../styles/responsive.css'
 
 
 function Home() {
@@ -25,9 +26,9 @@ function Home() {
         
 
          <div className="get-started-box flex flex-row justify-between py-[10px] px-[2px] ">
-           <a href="#" className="text-[#D0E3FF] font-sans text-[17px] font-bold px-[40px] py-[5px] mr-[5px] bg-[#334EAC] border-none rounded-[11px] cursor-pointer relative left-[-5px]" id="get-started-btn">GET STARTED</a>
+           <a href="#" className="link1 text-[#D0E3FF] font-sans text-[17px] font-bold px-[40px] py-[5px] mr-[5px] bg-[#334EAC] border-none rounded-[11px] cursor-pointer relative " id="get-started-btn">GET STARTED</a>
 
-           <a href="#" className="text-[#334EAC] font-sans text-[17px] font-bold px-[40px] py-[5px] bg-[#D0E3FF] border-none rounded-[11px] cursor-pointer relative right-[-0px]" id="learn-more-btn">LEARN MORE</a>
+           <a href="#" className="text-[#334EAC] font-sans text-[17px] font-bold px-[40px] py-[5px] bg-[#D0E3FF] border-none rounded-[11px] cursor-pointer relative" id="learn-more-btn">LEARN MORE</a>
          </div>
        </div> 
 

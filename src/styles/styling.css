@@ -29,25 +29,13 @@ body{
      transition:all 1s ease;}
 
 
-  .logo-box{
-    display:flex;
-    flex:1;
-    flex-direction:row;
-    color:black;
-    font-family:sans-serif;
-    font-size:11px;
-    font-weight:bold;
-    align-items:center; justify-content:center;
-    /* border:2px solid rgb(148, 144, 144); */
-    padding:3px; margin:5px;
-
-  }
+  
       #brand-pix{
        filter:drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
        /* position:relative; bottom:3px; */
       }
 
-  .navBar{
+  /* .navBar{
     display:flex;
     flex:2;
     flex-direction:row; align-content:center; justify-content:center;
@@ -55,9 +43,9 @@ body{
     padding:3px; margin:5px;
     position:relative;
 
-  }
+  } */
 
-   .navBar-ul{
+   /* .navBar-ul{
     display:flex;
     flex:1;
     flex-direction:row; align-content:center;
@@ -66,18 +54,24 @@ body{
     padding:2px; margin:2px;
     height:max-content;
 
-   }
+   } */
 
       .nav-bar-a{
        display:inline-block;
        color:#D0E3FF;
        font-family:sans-serif;
-       font-size:13px;
+       font-size:clamp(0.56rem,4vw,1rem);
        font-weight:bold;
+       order:2px solid rgb(148, 144, 144);
        padding:5px;
        text-decoration:none;
        transition:all 1s ease;
       }
+
+      /* text-[clamp(0.56rem,4vw,0.68rem)] text-[#D0E3FF] font-sans font-bold decoration-[none] 
+               transition-[all_1s_ease]  */
+
+      /* .nav-bar-a{display:inline-block} */
 
        .navbar-icon{
         transition:all 1s ease;
@@ -108,21 +102,70 @@ body{
         transition:All 0.7s ease; }
 
 
-    .login-btn, .signin-btn{transition: all 2s ease;}
+    .login-btn, .signin-btn{
+      font-size:clamp(0.56rem,4vw,0.81rem);
+      transition: all 1s ease;}
 
      .login-btn:hover, .signin-btn:hover{
       color:#D0E3FF;
       background-color:#334EAC;
-      transition: all 2s ease;
+      transition: all 1s ease;
       }
+
+
+   .sideBarBtn:before
+        {content: '';
+        position:absolute; left:0px;
+        background:#D0E3FF;
+        border-radius:2px;
+        width:3rem;
+        height:3px;
+        transition:All 1s ease; 
+        cursor: pointer;
+        transform:translateX(10px);
+        transform:translateY(9px);
+      } 
+
+    .sideBarBtn:after
+        {content: '';
+        position:absolute; left:0px;
+        background:#D0E3FF;
+        border-radius:2px;
+        width:3rem;
+        height:3px;
+        transition:All 1s ease; 
+        cursor: pointer;
+        transform:translateX(10px);
+        transform:translateY(-9px);
+      } 
+
+    
+
+    .sideBarToggling.sideBarBtn::before{
+      transform:translateY(0px);
+      transform:rotate(-45deg);
+      transition:All 1s ease
+    }
+    .sideBarToggling.sideBarBtn::after{
+      transform:translateY(0px);
+      transform:rotate(45deg);
+      transition: 1s ease
+    }
+    .sideBarToggling.sideBarBtn{
+      background-color:transparent;
+      transform:rotate(720deg);
+      transition:All 1s ease
+    }
+    
 
 
  .hero-container{
     z-index:2;
     display:flex;
-    flex-direction:column;justify-content:left;
+    flex-direction:column;justify-content:end;
+    flex-wrap:wrap; 
     position:relative; top:0px; left:0px; right:0px;
-    padding:75px; margin:0px;
+    padding:50px; 
     height:max-content;
     background-image:url('/src/assets/bg1.jpg');
     background-position:center; background-repeat:no-repeat; background-size:cover;
@@ -141,18 +184,18 @@ body{
   .hero-container-box1{
     display:flex;
     flex-direction:column; justify-content:space-between;
-    text-wrap-mode: wrap;
+    word-break:normal;
     padding:10px;
     height:max-content; width:500px;
     position:relative; top:50px;
-    /* border:2px solid gold; */
+    order:2px solid gold;
     background-color:transparent;
 
   }
 
-  /* .get-started-box{
-    border:2px solid gold;
-  } */
+  .get-started-box{
+    order:2px solid gold;
+  }
 
    .get-started-box a{
       transition: all 2s ease;
@@ -171,8 +214,8 @@ body{
 
 
   .hero-container-box2{
-    width:500px;
-    /* border:2px solid gold; */
+    width:200px;
+    order:2px solid gold;
   }
 
     /* .hero-container-box2 button{
@@ -216,6 +259,7 @@ body{
    .loginContainer{
     background-image:url('/src/assets/bg1.jpg');
     background-position:center; background-repeat:no-repeat; background-size:cover;
+    
     transition:all 1s ease;
 
   }
@@ -230,6 +274,21 @@ body{
     }
 
 
+     /* .hero-container{
+    z-index:2;
+    display:flex;
+    flex-direction:column;justify-content:end;
+    flex-wrap:wrap; 
+    position:relative; top:0px; left:0px; right:0px;
+    padding:50px; 
+    height:max-content;
+    background-image:url('/src/assets/bg1.jpg');
+    background-position:center; background-repeat:no-repeat; background-size:cover;
+    transition:all 1s ease;
+
+    } */
+
+
    .signInContainer{
      background-image:url('/src/assets/bg1.jpg');
      background-position:center; background-repeat:no-repeat; background-size:cover;
@@ -242,11 +301,7 @@ body{
        background:rgba(0, 0, 0, 0.3);
        height:100%; width:100%; }
 
-       .about-container{
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr 1fr;
-       }
-
+    
        .clickToSignUp{
         display:block;
         transition:all 1s ease;

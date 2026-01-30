@@ -1,6 +1,7 @@
 
 import React from 'react';
 import '../styles/styling.css'
+import '../styles/responsive.css'
 
 
 function About() {
@@ -9,9 +10,9 @@ function About() {
   return (
     <>
 
-     <section className="about-container z-[7] bg-[#D0E3FF] gap-[15px] m-0 px-[75px] py-[20px]" id="about-container">
+     <section className="about-container z-[7] grid grid-cols-[1fr_1fr_1fr_1fr] bg-[#D0E3FF] gap-[15px] m-0 px-[75px] py-[20px]" id="about-container">
 
-       <div className="about-Box1 flex flex-col align-middle 
+       <div className="about-Box1 flex flex-col flex-1 align-middle 
          justify-between p-[5px] break-words overflow-hidden">
            <h1 className="about-Box1-heading  text-[black] capitalize 
              font-sans font-bold text-[17px] my-[5px] ">
@@ -146,7 +147,7 @@ function About() {
 
 
        <div className="about-Box4 flex flex-col p-[5px] 
-         justify-self-end">
+         justify-self-end ">
          <h1 className="about-Box4-heading  text-[black] capitalize 
            font-sans font-bold text-[17px] my-[5px] ">
              Information
