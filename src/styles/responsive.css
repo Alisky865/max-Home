@@ -50,6 +50,16 @@
 
  }
 
+ @media(max-width:957px){
+
+  .about-Box4{
+    margin-left:25px;
+    
+  }
+
+
+
+ }
 
 
 
@@ -92,26 +102,67 @@
 
 
 
- @media(max-width:830px)
+ @media(max-width:837px)
  { .about-container{
-  display:grid; grid-template-columns:1fr 1fr;
+  display:grid; grid-template-columns:1fr 1fr 1fr;
+  justify-content:space-around;
  }
+
+ .subscribeBtn{
+  padding:5px; 
+  font-size:8px;
+ }
+ .email-Subscribe{
+  padding:7px 3px;
+ }
+
+ .about-Box2{
+  justify-self:center;
+ }
+
+ .about-Box3{
+  justify-self:right;
+ }
+
+
+  .about-Box4{
+  justify-self:flex-start; margin-left:0px;
+  align-self:self-start;
+ }
+
+
 
 
   }
 
-  @media(max-width:806px)
-   {
-
-
-
-   }
-
- 
-
 
  @media(max-width:800px)
- {.hero-container-box1{
+ {.about-container{
+  display:grid; grid-template-columns:1fr 1fr;
+  justify-content:space-around;
+  }
+
+  .about-Box1{
+    width:100%;
+    overflow:hidden; word-wrap:break-word;
+  }
+
+   .about-Box2{
+  justify-self:right;
+ }
+
+ .about-Box3{
+  justify-self:left;
+ }
+
+
+  .about-Box4{
+  justify-self:right; margin-left:0px;
+  align-self:self-start;
+ }
+
+  
+  .hero-container-box1{
     width:65%;
     transition:all 1s ease;
 
@@ -139,50 +190,6 @@
 
  }
 
- @media(max-width:770px)
- {
-  
-
- }
-
-
- @media(max-width:750px)
- {
-
-
- }
-
-
-
- @media(max-width:732px)
-  {
-    
- 
-  }
-
-  @media(max-width:706px)
-  {
-
-
-
-  }
-
-
-
-  @media(max-width:699px)
-  {
-
-
-
-  }
-
-
-
-  @media(max-width:678px)
-  {
-
-
-  }
 
   @media(max-width:656px)
   {.hero-container-box1{
@@ -284,12 +291,20 @@
 
 
   
- @media(max-width:542px)
- {
+ @media(max-width:569px)
+ {.about-container{
+  display:grid; grid-template-columns:2fr 1fr;
+  justify-content:space-around;
+  }
 
-
+ .about-Box1{
+  width:100%;
+  overflow:hidden; word-wrap:break-word;
+ }
 
  }
+
+
 
 
  @media(max-width:533px)
@@ -317,8 +332,19 @@
 
    }
 
+    .about-container{
+    display:grid; grid-template-columns:2fr 1fr;
+    justify-content:space-around;
+    }
+
+  .about-Box1{
+    width:100%;
+    overflow:hidden; word-wrap:break-word;
+  }
+
 
   }
+
 
  @media(max-width:440px)
    {
@@ -361,6 +387,31 @@
     font-size:17px;
     margin-bottom:0px;
    }
+
+   .about-container{
+    display:grid; grid-template-columns:2fr;
+    justify-content:space-around;
+    }
+
+      .about-Box1{
+      width:100%;
+      overflow:hidden; word-wrap:break-word;
+    }
+
+    .about-Box2{
+    width:100%;
+   }
+
+    .about-Box3{
+      width:100%;
+    }
+
+
+   .about-Box4{
+     width:100%;
+     justify-self:right; margin-left:0px;
+     align-self:self-start;
+    }
 
 
 
@@ -495,23 +546,48 @@
   }
 
   @media(max-width:365px)
-   { .dateInput{
-    width:116px;
+   {.signinBox{
+    width:115%;
+    transition:all 1s ease;
+    }
+     .dateInput{
+    width:145px;
+   }
+   .datelabel{
+    position:relative; left:-3px;
+   }
+
+   .dateInput2 {
+    position:relative; left:-5px;
+   }
+
+   .stateInput {
+    position:relative; left:5px;
+   }
+
+   .stateLabel{
+    position:relative; left:6px;
    }
 
    .details-box3b select{
-    width:116px;
+    width:143px;
     font-size:10px;
+    position:relative; left:-2px;
    }
 
    .details-box3b p{
     font-size:9px;
    }
 
-   
-
+   .details-box4 input{
+    width:142px;
+    font-size:8px;
+    position:relative; left:-1px;
+   }
  
   }
+
+
 
  @media(max-width:352px)
   {.para1{
@@ -524,20 +600,215 @@
    font-size:7px;
    }
 
+   .dateInput{
+    width:140px;
+   }
+
+   .dateInput2 {
+    position:relative; left:-4px;
+   }
+
+   .stateInput {
+    position:relative; left:5px;
+   }
+
  }
 
-  @media(max-width:350px)
-   { .dateInput{
-    width:112px;
+  
+
+  @media(max-width:346px)
+   {.dateInput{
+    width:137px;
+   }
+   .datelabel{
+    position:relative; left:-3px;
+   }
+
+   .dateInput2 {
+    position:relative; left:-4px;
+   }
+
+   .stateInput {
+    position:relative; left:5px;
+   }
+
+   .stateLabel{
+    position:relative; left:6px;
    }
 
    .details-box3b select{
-    width:114px;
+    width:137px;
     font-size:10px;
+    position:relative; left:-2px;
+   }
+
+   .details-box3b p{
+    font-size:9px;
+   }
+
+   .details-box4 input{
+    width:135px;
+    font-size:8px;
+    position:relative; left:-1px;
+   }
+  }
+
+
+   @media(max-width:339px)
+   {.dateInput{
+    width:132px;
+   }
+   .datelabel{
+    position:relative; left:-3px;
+   }
+
+   .dateInput2 {
+    position:relative; left:-4px;
+   }
+
+   .stateInput {
+    position:relative; left:4px;
+   }
+
+   .stateLabel{
+    position:relative; left:6px;
+   }
+
+   .details-box3b select{
+    width:133px;
+    font-size:10px;
+    position:relative; left:-2px;
+   }
+
+   .details-box3b p{
+    font-size:9px;
+   }
+
+   .details-box4 input{
+    width:130px;
+    font-size:8px;
+    position:relative; left:-1px;
+   }
+  }
+
+  @media(max-width:335px)
+   {.dateInput{
+    width:130px;
+   }
+
+   .details-box3b select{
+    width:130px;
+    font-size:10px;
+    position:relative; left:-2px;
+   }
+
+   .details-box3b p{
+    font-size:9px;
+   }
+
+   .details-box4 input{
+    width:130px;
+    font-size:8px;
+    position:relative; left:-1px;
+   }
+  }
+
+
+
+  
+
+
+
+   @media(max-width:330px)
+   { .loginBox{
+    width:100%;
+    padding:10px 5px;
+    }
+
+    
+    .dateInput{
+    width:120px;
+   }
+
+   .stateInput{
+    position:relative; left:5px;
+   }
+
+   .stateLabel{
+    position:relative; left:6px;
+    font-size:8px
+   }
+
+    .dateInput2{
+    position:relative; right:4px;
+   }
+
+   .datelabel{
+    position:relative; left:-3px; font-size:8px;
+   }
+
+   .details-box3a p{
+    font-size:8px;
+   }
+
+   .details-box3b select{
+    width:122px;
+    font-size:10px;
+    position:relative; left:-1px;
    }
 
    .details-box3b p{
     font-size:8px;
+   }
+
+   .details-box4 input{
+    width:120px;
+    font-size:5px;
+   }
+
+   .details-box4 p{
+    
+    font-size:8px;
+   }
+
+   .email-input{
+    width:350px;
+   }
+
+   .password-input{
+    width:350px;
+    position:relative; left:-2px; 
+   }
+
+   .keepMe{
+    position:relative; left:15px; 
+   }
+
+   .forgetPass{
+    position:relative; right:15px; 
+   }
+
+   .agree-box{
+    position:relative; right:5px;
+    width:100%;
+   }
+   .agree-box a{
+    font-size:9px;
+    margin-top:2px;
+   }
+    .agree-box label{
+    font-size:9px;
+    margin-top:2px;
+   }
+
+   .log-in-button-box{
+    width:100%;
+   }
+
+   .logInBtn {
+    font-size:9px;
+    padding:5px 10px;
+    width:90%;
    }
 
    
@@ -546,7 +817,11 @@
   }
 
   @media(max-width:322px)
-  {.para1{
+  {.dateInput{
+    width:122px;
+   }
+    
+   .para1{
     font-size:11px;
    }
 

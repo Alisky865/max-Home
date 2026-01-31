@@ -33,11 +33,11 @@ function Home() {
        </div> 
 
        <div className="hero-container-box2
-          flex flex-row justify-center self-center p-2.5 mt-28 bg-transparent relative h-max">
-         <button className="bg-[#D0E3FF] pt-1 pb-1 pr-4 pl-4 border-none mt-0 mb-0 mr-2.5 ml-2.5 rounded-full cursor-pointer "></button>
-         <button className="bg-[#D0E3FF] pt-1 pb-1 pr-4 pl-4 border-none mt-0 mb-0 mr-2.5 ml-2.5 rounded-full cursor-pointer "></button>
-         <button className="bg-[#D0E3FF] pt-1 pb-1 pr-4 pl-4 border-none mt-0 mb-0 mr-2.5 ml-2.5 rounded-full cursor-pointer "></button>
-         <button className="bg-[#D0E3FF] pt-1 pb-1 pr-4 pl-4 border-none mt-0 mb-0 mr-2.5 ml-2.5 rounded-full cursor-pointer "></button>
+          flex flex-row justify-center self-center p-2.5 mt-28 bg-transparent relative top-[40px] h-max">
+         <button className="bg-[#D0E3FF] p-[4px] border-none mt-0 mb-0 mr-2.5 ml-2.5 rounded-[100%] cursor-pointer "></button>
+         <button className="bg-[#D0E3FF] p-[4px] border-none mt-0 mb-0 mr-2.5 ml-2.5 rounded-[100%] cursor-pointer "></button>
+         <button className="bg-[#D0E3FF] p-[4px] border-none mt-0 mb-0 mr-2.5 ml-2.5 rounded-[100%] cursor-pointer "></button>
+         <button className="bg-[#D0E3FF] p-[4px] border-none mt-0 mb-0 mr-2.5 ml-2.5 rounded-[100%] cursor-pointer "></button>
        </div>
        
      </section>

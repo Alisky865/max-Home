@@ -10,10 +10,10 @@ function About() {
   return (
     <>
 
-     <section className="about-container z-[7] grid grid-cols-[1fr_1fr_1fr_1fr] bg-[#D0E3FF] gap-[15px] m-0 px-[75px] py-[20px]" id="about-container">
+     <section className="about-container z-[7] grid grid-cols-[2fr_1fr_1fr_1fr] bg-[#D0E3FF] gap-[15px] m-0 px-[35px] py-[20px]" id="about-container">
 
        <div className="about-Box1 flex flex-col flex-1 align-middle 
-         justify-between p-[5px] break-words overflow-hidden">
+         justify-between p-[5px] mr-[15px] overflow-hidden break-words ">
            <h1 className="about-Box1-heading  text-[black] capitalize 
              font-sans font-bold text-[17px] my-[5px] ">
              My Account
@@ -36,10 +36,47 @@ function About() {
           </div>
        </div>
 
+
      {/*********************************************/}
 
 
-       <div className="about-Box2 flex flex-col p-[5px] justify-self-end">
+       <div className="about-Box2 flex flex-col p-[5px] ">
+         <h1 className="about-Box3-heading  text-[black] capitalize 
+           font-sans font-bold text-[17px] my-[5px] ">
+             Information
+         </h1>
+
+         <a href="#" className="aboutBox3link1  text-black 
+           capitalize font-sans font-normal text-[11px] text-justify 
+           my-[5px]">
+           Latest listings
+         </a>
+
+         <a href="#" className="aboutBox3link2 
+           text-black capitalize 
+           font-sans font-normal text-[11px] text-justify m-[0px]">
+           Top Sellers
+         </a>
+
+         <a href="#" className="aboutBox3link3 
+           text-black  
+           font-sans font-normal text-[11px] my-[5px]">
+           Verified Listings
+         </a>
+
+         <a href="#" className="aboutBox3link4 
+           text-black  
+           font-sans font-normal text-[11px] my-[5px]">
+           Our Blog
+         </a>
+
+       </div>
+
+
+     {/*****************************************/}
+
+
+       <div className="about-Box3 flex flex-col p-[5px] ">
          <h1 className="about-Box2-heading  text-[black] capitalize 
            font-sans font-bold text-[17px] my-[5px] ">
              Contact
@@ -108,46 +145,12 @@ function About() {
          </div>
        </div>
 
-     {/*****************************************/}
-
-
-       <div className="about-Box3 flex flex-col p-[5px] justify-self-end ">
-         <h1 className="about-Box3-heading  text-[black] capitalize 
-           font-sans font-bold text-[17px] my-[5px] ">
-             Information
-         </h1>
-
-         <a href="#" className="aboutBox3link1  text-black 
-           capitalize font-sans font-normal text-[11px] text-justify 
-           my-[5px]">
-           Latest listings
-         </a>
-
-         <a href="#" className="aboutBox3link2 
-           text-black capitalize 
-           font-sans font-normal text-[11px] text-justify m-[0px]">
-           Top Sellers
-         </a>
-
-         <a href="#" className="aboutBox3link3 
-           text-black  
-           font-sans font-normal text-[11px] my-[5px]">
-           Verified Listings
-         </a>
-
-         <a href="#" className="aboutBox3link4 
-           text-black  
-           font-sans font-normal text-[11px] my-[5px]">
-           Our Blog
-         </a>
-
-       </div>
 
     {/*****************************************/}
 
 
        <div className="about-Box4 flex flex-col p-[5px] 
-         justify-self-end ">
+          ">
          <h1 className="about-Box4-heading  text-[black] capitalize 
            font-sans font-bold text-[17px] my-[5px] ">
              Information
