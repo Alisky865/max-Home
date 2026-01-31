@@ -32,6 +32,10 @@ function Header() {
    const clickSideBar = ()=>{
     const clickbtn = document.querySelector(".sideBarBtn");
     clickbtn.classList.toggle("sideBarToggling");
+
+    const sideBar = document.querySelector(".sideBar");
+    sideBar.classList.toggle("sideBarShow");
+
   }
 
   return (
@@ -84,6 +88,38 @@ function Header() {
         
        </div>
      </div>
+
+     <nav className="sideBar z-[11] flex flex-col align-middle
+         justify-start px-[15px] py-[3px] h-[100vh] w-[max-content] absolute top-[0px] left-[-200px] bottom-[0px] mb-[0px] 
+         bg-[#2b2929] ">
+         <div className="logo-box flex flex-row font-sans 
+          text-[11px] font-bold text-[#D0E3FF] p-[3px]  mb-[35px] ">
+          <img className="relative left-[50px] w-11 " id="brand-pix" src="/src/assets/logo.webp" alt="LOGO"></img>
+         </div>
+         <ul className="sideBar-ul flex flex-col align-middle justify-between text-[13px] text-[#D0E3FF] font-sans font-normal list-none px-[3px] py-[10px] m-[2px] h-max ">
+            <li className="mb-[7px]">
+              <a href="#hero-container" className="side-bar-a 
+               ">Home
+                {/* <i className="fa-solid fa-caret-down sidebar-icon text-[#D0E3FF] mb-[3px]" id="sidebar-icon"></i> */}
+              </a>
+            </li>
+            <li className="mb-[7px]">
+              <a href="#" className="side-bar-a mb-[7px]">Available Properties
+                {/* <i className="fa-solid fa-caret-down sidebar-icon text-[#D0E3FF] mb-[3px]]" id="sidebar-icon"></i> */}
+              </a>
+            </li>
+            <li className="mb-[7px]">
+              <a href="#about-container" className="side-bar-a mb-[7px]">About
+                {/* <i className="fa-solid fa-caret-down sidebar-icon text-[#D0E3FF] mb-[3px]" id="sidebar-icon"></i> */}
+              </a>
+            </li>
+            <li className="mb-[7px]">
+              <a href="#" className="side-bar-a">Contact
+                {/* <i className="fa-solid fa-caret-down sidebar-icon text-[#D0E3FF] mb-[3px]" id="sidebar-icon"></i> */}
+              </a>
+            </li>
+         </ul>
+     </nav>
       
     </>
   )
