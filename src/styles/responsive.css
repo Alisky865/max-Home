@@ -95,6 +95,12 @@
     display:flex;
   }
 
+   .sideBar{
+    display:flex;
+    flex-direction:column;
+    flex:auto;
+  }
+
  }
 
   

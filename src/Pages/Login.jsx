@@ -17,12 +17,12 @@ function Login() {
     <>
 
      <section className="loginContainer z-[9] flex flex-col align-middle  
-       justify-center relative top-0 left-0 right-0 p-[35px]"  id="login-container">
+       justify-center relative top-0 left-0 right-0 p-[35px] h-screen"  id="login-container">
 
         <div className="loginBox self-center flex flex-col align-middle 
          px-[10px] py-[1px] border-[2px] border-[solid] 
          border-[#D0E3FF] bg-[#D0E3FF10] backdrop-blur-[4px] 
-         rounded-[10px] h-[400px] w-[max-content] my-[30px]">
+         rounded-[10px] h-[400px] w-[max-content]">
 
            <h1 className="log-in-heading text-center text-[25px] 
              font-sans font-bold text-[#D0E3FF] my-[15px]">Log In
@@ -99,7 +99,7 @@ function Login() {
            </button>
           </div>
 
-          <p className="relative left-[24px] mt-[10px] text-[#D0E3FF] font-sans font-normal">
+          <p className="relative self-center mt-[10px] text-[#D0E3FF] font-sans font-normal">
             Dont Have An Account ? 
             <a href="#" className="text-[#D0E3FF] font-sans font-bold 
                decoration-0 ml-[7px]">Sign Up</a>

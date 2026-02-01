@@ -2,6 +2,8 @@
 import React from 'react';
 import '../styles/styling.css'
 import '../styles/responsive.css'
+import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 
 function Header() {
@@ -50,23 +52,24 @@ function Header() {
          justify-center p-[3px] m-[5px] relative ">
          <ul className="navBar-ul flex flex-[1] flex-row align-middle justify-between list-none p-[2px] m-[2px] h-max ">
             <li>
-              <a href="#hero-container" className="nav-bar-a ">Home
-                <i className="fa-solid fa-caret-down navbar-icon text-[#334EAC] ml-2" id="navbar-icon"></i>
-              </a>
+              <NavLink to="/" className={({isActive})=>  
+               isActive ? "navBarLink-active" : "nav-bar-a"}end>Home
+                {/* <i className="fa-solid fa-caret-down navbar-icon text-[#334EAC] ml-2" id="navbar-icon"></i> */}
+              </NavLink>
             </li>
             <li>
               <a href="#" className="nav-bar-a">Available Properties
-                <i className="fa-solid fa-caret-down navbar-icon text-[#334EAC] ml-2" id="navbar-icon"></i>
+                {/* <i className="fa-solid fa-caret-down navbar-icon text-[#334EAC] ml-2" id="navbar-icon"></i> */}
               </a>
             </li>
             <li>
               <a href="#about-container" className="nav-bar-a">About
-                <i className="fa-solid fa-caret-down navbar-icon text-[#334EAC] ml-2" id="navbar-icon"></i>
+                {/* <i className="fa-solid fa-caret-down navbar-icon text-[#334EAC] ml-2" id="navbar-icon"></i> */}
               </a>
             </li>
             <li>
-              <a href="#" className="nav-bar-a">Contact
-                <i className="fa-solid fa-caret-down navbar-icon text-[#334EAC] ml-2" id="navbar-icon"></i>
+              <a href="#contact-details" className="nav-bar-a">Contact
+                {/* <i className="fa-solid fa-caret-down navbar-icon text-[#334EAC] ml-2" id="navbar-icon"></i> */}
               </a>
             </li>
          </ul>
@@ -74,9 +77,13 @@ function Header() {
 
        <div className="login-box1 flex flex-row flex-1 align-middle justify-end p-3 m-[5px]">
          <button className="login-btn text-[#334EAC] font-sans 
-         font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">LOG IN</button>
+         font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
+           <Link to="/login"> LOG IN</Link>
+         </button>
 
-         <button className="signin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">SIGN IN</button>
+         <button className="signin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
+          <Link to="/signup">SIGN IN</Link>
+         </button>
        </div>
 
        <div className="sideBarBtnBox hidden  flex-row flex-1 align-middle 
@@ -89,19 +96,21 @@ function Header() {
        </div>
      </div>
 
-     <nav className="sideBar z-[11] flex flex-col align-middle
-         justify-start px-[15px] py-[3px] h-[100vh] w-[max-content] absolute top-[0px] left-[-200px] bottom-[0px] mb-[0px] 
-         bg-[#2b2929] ">
+     <nav className="sideBar z-[11] hidden
+       align-middle justify-start px-[15px] py-[3px] h-[100vh] w-[max-content] absolute top-[0px] left-[-200px] bottom-[0px] m-[0px] 
+         bg-[#4E4C4C] ">
          <div className="logo-box flex flex-row font-sans 
           text-[11px] font-bold text-[#D0E3FF] p-[3px]  mb-[35px] ">
           <img className="relative left-[50px] w-11 " id="brand-pix" src="/src/assets/logo.webp" alt="LOGO"></img>
          </div>
-         <ul className="sideBar-ul flex flex-col align-middle justify-between text-[13px] text-[#D0E3FF] font-sans font-normal list-none px-[3px] py-[10px] m-[2px] h-max ">
+         <ul className="sideBar-ul flex flex-col align-middle 
+         justify-between text-[13px] text-[#D0E3FF] font-sans font-bold list-none px-[3px] py-[10px] m-[2px]">
             <li className="mb-[7px]">
-              <a href="#hero-container" className="side-bar-a 
-               ">Home
+              <NavLink to="/" className={({isActive})=>  
+               isActive ? "text-[13px] text-[#334EAC] font-sans font-bold list-none px-[3px] py-[10px] ml-[-2px]" : "text-[13px] text-[#D0E3FF] font-sans font-bold list-none px-[3px] py-[10px] ml-[-2px]"} 
+               end > Home
                 {/* <i className="fa-solid fa-caret-down sidebar-icon text-[#D0E3FF] mb-[3px]" id="sidebar-icon"></i> */}
-              </a>
+              </NavLink>
             </li>
             <li className="mb-[7px]">
               <a href="#" className="side-bar-a mb-[7px]">Available Properties
@@ -114,7 +123,7 @@ function Header() {
               </a>
             </li>
             <li className="mb-[7px]">
-              <a href="#" className="side-bar-a">Contact
+              <a href="#contact-details" className="side-bar-a">Contact
                 {/* <i className="fa-solid fa-caret-down sidebar-icon text-[#D0E3FF] mb-[3px]" id="sidebar-icon"></i> */}
               </a>
             </li>

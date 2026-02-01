@@ -1,6 +1,12 @@
 
 /*  */
 
+html{
+  
+  scroll-behavior: smooth;
+
+}
+
 body{
   background-color:#D0E3FF;}
 
@@ -68,6 +74,31 @@ body{
        transition:all 1s ease;
       }
 
+      .navBarLink-active{
+       display:inline-block;
+       color:#334EAC;
+       font-family:sans-serif;
+       font-size:clamp(0.56rem,4vw,1rem);
+       font-weight:bold;
+       order:2px solid rgb(148, 144, 144);
+       padding:5px;
+       text-decoration:none;
+       transition:all 1s ease;
+      }
+
+      /* .sideBarLink-active{
+       
+       color:#334EAC;
+       font-family:sans-serif;
+       font-size:13px;
+       font-weight:bold;
+       order:2px solid rgb(148, 144, 144);
+       padding:3px 10px; margin:2px;
+       text-decoration:none;
+       transition:all 1s ease;
+      } */
+
+
       /* text-[clamp(0.56rem,4vw,0.68rem)] text-[#D0E3FF] font-sans font-bold decoration-[none] 
                transition-[all_1s_ease]  */
 
@@ -89,7 +120,7 @@ body{
 
        .nav-bar-a:before
         {content: '';
-        position:absolute; bottom:-1px; left:0px;
+        position:absolute; bottom:3px; left:0px;
         /* background:#334EAC; */
         background:#D0E3FF;
         border-radius:20%;
@@ -118,7 +149,7 @@ body{
 
 
       .sideBarShow{
-        position:absolute; left:0px;
+        position:absolute; top:0px; left:0px; bottom:0px;
         transition:all 1s ease;
       }
 
@@ -176,14 +207,7 @@ body{
 
 
  .hero-container{
-    z-index:2;
-    display:flex;
-    flex-direction:column;justify-content:end;
-    flex-wrap:wrap; 
-    position:relative; top:0px; left:0px; right:0px;
-    padding:50px; 
-    height:max-content;
-    background-image:url('/src/assets/bg1.jpg');
+    background-image:url('/bg1.webp');
     background-position:center; background-repeat:no-repeat; background-size:cover;
     transition:all 1s ease;
 
@@ -197,7 +221,7 @@ body{
      height:100%; width:100%;
     }
 
-  .hero-container-box1{
+  /* .hero-container-box1{
     display:flex;
     flex-direction:column; justify-content:space-between;
     word-break:normal;
@@ -206,8 +230,7 @@ body{
     position:relative; top:50px;
     order:2px solid gold;
     background-color:transparent;
-
-  }
+   } */
 
   .get-started-box{
     order:2px solid gold;
@@ -273,9 +296,8 @@ body{
 
 
    .loginContainer{
-    background-image:url('/src/assets/bg1.jpg');
+    background-image:url('/bg1.webp');
     background-position:center; background-repeat:no-repeat; background-size:cover;
-    
     transition:all 1s ease;
 
   }
@@ -291,7 +313,7 @@ body{
 
 
    .signInContainer{
-     background-image:url('/src/assets/bg1.jpg');
+     background-image:url('/bg1.webp');
      background-position:center; background-repeat:no-repeat; background-size:cover;
      transition:all 1s ease;}
 

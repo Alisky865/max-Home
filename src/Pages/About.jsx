@@ -76,7 +76,8 @@ function About() {
      {/*****************************************/}
 
 
-       <div className="about-Box3 flex flex-col p-[5px] ">
+       <div className="about-Box3 flex flex-col p-[5px] " 
+         id="contact-details" >
          <h1 className="about-Box2-heading  text-[black] capitalize 
            font-sans font-bold text-[17px] my-[5px] ">
              Contact

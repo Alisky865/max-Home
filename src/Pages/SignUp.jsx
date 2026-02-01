@@ -33,12 +33,12 @@ function SignUp() {
 
      <section className="signInContainer z-[9] flex flex-col  
        align-middle justify-center relative top-0 left-0 right-0 
-       mt-[0px] p-[35px]"  id="login-container">
+       p-[35px] h-max"  id="login-container">
 
        <div className="signinBox self-center flex flex-col align-middle 
          px-[5px] py-[1px] border-[2px] border-[solid] 
          border-[#D0E3FF] bg-[#D0E3FF10] backdrop-blur-[4px] 
-         rounded-[11px] h-[100%] w-[max-content] my-[20px]">
+         rounded-[11px] h-[max-content] w-[max-content] mt-[70px]">
            <div>
              <h1 className="sign-up-heading text-center text-[25px] 
                font-sans font-bold text-[#D0E3FF] my-[10px]">Sign up
@@ -202,15 +202,17 @@ function SignUp() {
 
          <div className="grid grid-rows-1
             gap-[10px] px-[10px] py-[5px] mt-[5px] mb-[15px]">
-             <p className="agree-terms text-[12px] font-sans 
-               font-normal text-[#D0E3FF] mb-[3px] capitalize">
-               by clicking sign up, you agree to our
-               <a href="#" className="text-[#334EAC]"> terms </a> 
-                and that<br/>you have read our 
-               <a href="#" className="text-[#334EAC]"> data use policy 
-               </a> including our<br/>
-               <a href="#" className="text-[#334EAC]"> cookie use.</a>
-             </p>
+             <div className="">
+                <p className="agree-terms text-[12px] font-sans 
+                  font-normal text-[#D0E3FF] mb-[3px] capitalize">
+                  by clicking sign up, you agree to our
+                  <a href="#" className="text-[#334EAC]"> terms </a> 
+                    and that<br/>you have read our 
+                  <a href="#" className="text-[#334EAC]"> data use policy 
+                  </a> including our<br/>
+                  <a href="#" className="text-[#334EAC]"> cookie use.</a>
+                </p>
+             </div>
 
              <button className=" bg-[#334EAC] text-[13px] 
                text-[#D0E3FF] font-sans font-normal px-[10px] py-[5px] 
