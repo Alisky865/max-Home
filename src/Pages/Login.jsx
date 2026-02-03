@@ -18,7 +18,7 @@ function Login() {
     <>
 
      <section className="loginContainer z-[9] flex flex-col align-middle  
-       justify-center relative top-0 left-0 right-0 p-[35px] h-screen"  id="login-container">
+       justify-center relative top-0 left-0 right-0 px-[35px] py-[95px] h-screen"  id="login-container">
 
         <div className="loginBox self-center flex flex-col align-middle 
          px-[10px] py-[1px] border-[2px] border-[solid] 
