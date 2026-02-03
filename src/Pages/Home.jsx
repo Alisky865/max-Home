@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from "react-router-dom";
 import '../styles/styling.css'
 import '../styles/responsive.css'
 
@@ -12,7 +13,7 @@ function Home() {
 
      <section className="hero-container z-[2] flex flex-col justify-end 
      flex-wrap relative top-[0px] left-[0px] right-[0px] 
-     px-[50px] py-[30px] h-screen
+     px-[50px] py-[30px] h-[100vh]
       " id="hero-container">
        <div className="hero-container-box1 flex flex-col jsutify-between break-words p-[10px] h-max w-[500px] relative top-[50px] bg-transparent">
          <p className="para1 text-[#D0E3FF] font-sans font-bold 
@@ -29,7 +30,8 @@ function Home() {
         
 
          <div className="get-started-box flex flex-row justify-between py-[10px] px-[2px] ">
-           <a href="#" className="link1 text-[#D0E3FF] font-sans text-[17px] font-bold px-[40px] py-[5px] mr-[5px] bg-[#334EAC] border-none rounded-[11px] cursor-pointer relative " id="get-started-btn">GET STARTED</a>
+           
+           <Link to="/login" className="link1 text-[#D0E3FF] font-sans text-[17px] font-bold px-[40px] py-[5px] mr-[5px] bg-[#334EAC] border-none rounded-[11px] cursor-pointer relative " id="get-started-btn">GET STARTED</Link>
 
            <a href="#" className="text-[#334EAC] font-sans text-[17px] font-bold px-[40px] py-[5px] bg-[#D0E3FF] border-none rounded-[11px] cursor-pointer relative" id="learn-more-btn">LEARN MORE</a>
          </div>

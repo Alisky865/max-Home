@@ -4,6 +4,7 @@
 html{
   
   scroll-behavior: smooth;
+  overflow-y:auto;
 
 }
 
@@ -133,11 +134,13 @@ body{
         transition:All 0.7s ease; }
 
 
-    .login-btn, .signin-btn{
+     .login-btn, .signin-btn, 
+     .sidebarlogin-btn, .sidebarsignin-btn{
       font-size:clamp(0.56rem,4vw,0.81rem);
       transition: all 1s ease;}
 
-     .login-btn:hover, .signin-btn:hover{
+     .login-btn:hover, .signin-btn:hover
+     .sidebarlogin-btn, .sidebarsignin:hover{
       color:#D0E3FF;
       background-color:#334EAC;
       transition: all 1s ease;

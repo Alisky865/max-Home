@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from "react-router-dom";
 import '../styles/styling.css'
 import '../styles/responsive.css'
 
@@ -101,8 +102,7 @@ function Login() {
 
           <p className="relative self-center mt-[10px] text-[#D0E3FF] font-sans font-normal">
             Dont Have An Account ? 
-            <a href="#" className="text-[#D0E3FF] font-sans font-bold 
-               decoration-0 ml-[7px]">Sign Up</a>
+             <Link to="/signup" className="text-[#D0E3FF] font-sans font-bold  ml-[7px]">Sign Up</Link>
           </p>
 
 

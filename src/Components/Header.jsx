@@ -46,7 +46,7 @@ function Header() {
      <div className="header-box">
        <div className="logo-box flex flex-[1] flex-row font-sans 
          text-[11px] font-bold text-[#D0E3FF] p-[3px] m-[5px] ">
-         <img className="relative left-[50px] w-11 " id="brand-pix" src="/src/assets/logo.webp" alt="LOGO"></img>
+         <img className="relative left-[50px] w-11 " id="brand-pix" src="/logo.webp" alt="LOGO"></img>
        </div>
        <nav className="navBar flex flex-[2] flex-row align-middle 
          justify-center p-[3px] m-[5px] relative ">
@@ -97,13 +97,14 @@ function Header() {
      </div>
 
      <nav className="sideBar z-[11] hidden
-       align-middle justify-start px-[15px] py-[3px] h-[100vh] w-[max-content] absolute top-[0px] left-[-200px] bottom-[0px] m-[0px] 
+       align-middle justify-start px-[15px] py-[3px] h-screen w-[max-content] fixed top-[0px] left-[-200px] bottom-[0px] m-[0px]
          bg-[#4E4C4C] ">
          <div className="logo-box flex flex-row font-sans 
           text-[11px] font-bold text-[#D0E3FF] p-[3px]  mb-[35px] ">
-          <img className="relative left-[50px] w-11 " id="brand-pix" src="/src/assets/logo.webp" alt="LOGO"></img>
+          <img className="relative left-[50px] w-11 " id="brand-pix" src="/logo.webp" alt="LOGO"></img>
          </div>
-         <ul className="sideBar-ul flex flex-col align-middle 
+
+         <ul className="sideBar-ul flex flex-col align-middle
          justify-between text-[13px] text-[#D0E3FF] font-sans font-bold list-none px-[3px] py-[10px] m-[2px]">
             <li className="mb-[7px]">
               <NavLink to="/" className={({isActive})=>  
@@ -128,6 +129,17 @@ function Header() {
               </a>
             </li>
          </ul>
+
+         <div className="sidebar-login-box flex flex-row gap-[10px] align-middle justify-between py-[3px] px-[0px] m-[5px] h-auto">
+         <button className="sidebarlogin-btn text-[#334EAC] font-sans 
+         font-bold py-[5px] px-[10px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
+           <Link to="/login"> LOG IN</Link>
+         </button>
+
+         <button className="sidebarsignin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[10px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
+          <Link to="/signup">SIGN IN</Link>
+         </button>
+       </div>
      </nav>
       
     </>

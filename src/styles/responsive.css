@@ -352,8 +352,10 @@
   }
 
 
- @media(max-width:440px)
-   {
+ @media(max-width:450px)
+   {.hero-container{
+    height:auto;
+   }
 
   }
 
@@ -529,6 +531,44 @@
 
 
    }
+
+    @media(max-width:378px)
+   { .dateInput{
+    width:122px;
+   }
+
+   .dateInput{
+
+    position:relative; left:-5px;
+
+   }
+
+   .stateInput{
+
+    position:relative; left:3px;
+
+   }
+
+   .stateLabel{
+
+    position:relative; left:4px;
+
+   }
+
+   .details-box3b select{
+    width:120px;
+    font-size:10px;
+    position:relative; left:-3px;
+   }
+
+   .details-box3b p{
+    font-size:9px;
+   }
+
+   
+
+ 
+  }
 
 
 
