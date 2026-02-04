@@ -1,14 +1,15 @@
 
 import React from 'react';
 import  { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
-import { NavLink } from 'react-router-dom';
+import { Link, useNavigate, NavLink } from "react-router-dom";
 import '../styles/styling.css'
 import '../styles/responsive.css'
 
 
 function AgentsOrTenants() {
   const [choice, setChoice] = useState('')
+
+  const navigate = useNavigate();
 
   function pickSignUpChoice(e){
     setChoice(e.target.value);
@@ -17,15 +18,15 @@ function AgentsOrTenants() {
   const isdisabled = choice.trim() === '';
 
   const createAcct = ()=>{
-    console.log('wats up man')
+    if(choice === 'Tenant')
+      navigate('/tenantsignup');
+   else if(choice === 'Agent')
+      navigate('/agentsignup');
+    
+    
   }
 
-  useEffect(()=>{console.log(choice)},[choice])
-
-  // <input type="radio" value='Home Delivery' 
-  //             checked={deliveryMethod === 'Home Delivery'} 
-  //             onChange={pickDeliveryMethod} />
-  //           <label htmlFor="">Home Delivery</label>
+  // useEffect(()=>{console.log(choice)},[choice])
  
  
   return (

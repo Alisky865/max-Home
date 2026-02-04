@@ -6,7 +6,8 @@ import Footer from './Components/Footer.jsx'
 import Home from './Pages/Home.jsx'
 import Login from './Pages/Login.jsx'
 import AgentsOrTenants from './Pages/AgentsOrTenants.jsx'
-import SignUp from './Pages/SignUp.jsx'
+import TenantSignUp from './Pages/TenantSignUp.jsx'
+import AgentSignUp from './Pages/AgentSignUp.jsx'
 import About from './Pages/About.jsx'
 
 
@@ -20,10 +21,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/AgentsOrTenants" element={<AgentsOrTenants/>}/>
-        <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/agentsortenants" element={<AgentsOrTenants/>}/>
+        <Route path="/tenantsignUp" element={<TenantSignUp/>}/>
+        <Route path="/agentsignup" element={<AgentSignUp/>}/>
       </Routes>
-      {/* <AgentsOrTenants/> */}
       <About/>
       <Footer/>
     </>

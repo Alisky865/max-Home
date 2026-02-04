@@ -4,30 +4,9 @@ import '../styles/styling.css'
 import '../styles/responsive.css'
 
 
-function SignUp() {
-
-  const clickHere = ()=>{
-    const click = document.querySelector(".clickHereBtn");
-    
-    if(!click.classList.contains('clickToSignUp'))
-      { click.classList.add('clickToSignUp'); 
-         click.classList.remove('clickToSignUpClose')
-      }
-   else{click.classList.add('clickToSignUpClose');
-     click.classList.remove('clickToSignUp');
-   };
+function AgentSignUp() {
 
 
-    // click.classList.contains('clickToSignUp') ? click.classList.add('clickToSignUpClose') : click.classList.add('clickToSignUp');
-  }
-
-
-  // <input type="radio" value='Home Delivery' 
-  //             checked={deliveryMethod === 'Home Delivery'} 
-  //             onChange={pickDeliveryMethod} />
-  //           <label htmlFor="">Home Delivery</label>
- 
- 
   return (
     <>
 
@@ -43,18 +22,6 @@ function SignUp() {
              <h1 className="sign-up-heading text-center text-[25px] 
                font-sans font-bold text-[#D0E3FF] my-[10px]">Sign up
              </h1>
-           </div>
-
-
-           <div>
-             <p className="sign-up-heading-p text-center text-[13px] 
-              font-sans font-normal text-[#D0E3FF] mb-[5px] mr-[3px] 
-               w-[100%]">
-               Want To Register As An Agent ?
-               <button className=" font-bold border-none bg-transparent px-[7px] py-[5px]" onClick={clickHere}>
-                 Click Here
-               </button>
-             </p>
            </div>
 
 
@@ -100,7 +67,7 @@ function SignUp() {
            </div>
 
 
-           <div className="clickHereBtn hidden ">
+           <div className="clickHereBtn ">
              <div className="details-box2 grid grid-cols-2">
                  <div className="grid grid-rows w-[160px]  
                    overflow-hidden py-[3px] px-[1px] relative left-[7px] place-content-center">
@@ -230,4 +197,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
+export default AgentSignUp
