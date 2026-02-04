@@ -21,12 +21,12 @@ function Login() {
        justify-center relative top-0 left-0 right-0 px-[35px] py-[95px] h-screen"  id="login-container">
 
         <div className="loginBox self-center flex flex-col align-middle 
-         px-[10px] py-[1px] border-[2px] border-[solid] 
+         px-[10px] py-[35px] border-[2px] border-[solid] 
          border-[#D0E3FF] bg-[#D0E3FF10] backdrop-blur-[4px] 
          rounded-[10px] h-[400px] w-[max-content]">
 
            <h1 className="log-in-heading text-center text-[25px] 
-             font-sans font-bold text-[#D0E3FF] my-[15px]">Log In
+             font-sans font-bold text-[#D0E3FF] mb-[15px]">Log In
            </h1>           
 
            <div className="emailBox flex flex-row align-middle justify-center 
@@ -100,9 +100,9 @@ function Login() {
            </button>
           </div>
 
-          <p className="relative self-center mt-[10px] text-[#D0E3FF] font-sans font-normal">
+          <p className="relative self-center mt-[10px]  text-[#D0E3FF] font-sans font-normal">
             Dont Have An Account ? 
-             <Link to="/signup" className="text-[#D0E3FF] font-sans font-bold  ml-[7px]">Sign Up</Link>
+             <Link to="/agentsortenants" className="text-[#D0E3FF] font-sans font-bold  ml-[7px]">Sign Up</Link>
           </p>
 
 

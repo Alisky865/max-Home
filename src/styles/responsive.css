@@ -81,7 +81,16 @@
    .loginContainer{
     padding:250px 35px;
    }
-  
+
+   .agentTenantContainer{
+    padding:100px 35px;
+    height:max-content;
+   }
+
+   /* .agentTenant{
+    margin-top:35px;
+   }
+   */
   }
 
 
@@ -399,6 +408,14 @@
  {.hero-container-box1{
     padding:10px; width:80%;
 
+   }
+
+ }
+
+  @media(max-width:520px)
+ {.agentTenantContainer{
+    padding:100px 35px;
+    height:max-content;
    }
 
 
@@ -831,12 +848,39 @@
     font-size:8px;
     position:relative; left:-1px;
    }
+
+   .agentTenant{
+    width:115%;
+    transition:all 1s ease; 
+    
+   }
+
+    .signUp-heading{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+    .tenantBox{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+    .tenantBox div, .tenantBox p{
+    width:250px; font-size:19px;
+    transition:all 1s ease; 
+   }
+
+   .createBtn-box{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+   .createAcctBtn{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
   }
-
-
-
-  
-
 
 
    @media(max-width:330px)
@@ -931,6 +975,42 @@
     width:90%;
    }
 
+   .agentTenant{
+    width:115%;
+    transition:all 1s ease; 
+    padding:1px 15px;
+   }
+
+    .signUp-heading{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+    .tenantBox{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+    .tenantBox div, .tenantBox p{
+    width:230px; font-size:19px;
+    transition:all 1s ease; 
+   }
+
+   .createBtn-box{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+   .createAcctBtn{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+   .signUp-heading{
+    position:relative; left:0px;
+   }
+
+
    
 
  
@@ -954,6 +1034,44 @@
    transition: all 2s ease;
    font-size:7px;
    }
+
+ }
+
+ @media(max-width:316px){
+  .agentTenant{
+    width:115%;
+    transition:all 1s ease; 
+    padding:1px 15px;
+   }
+
+    .signUp-heading{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+    .tenantBox{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+    .tenantBox div, .tenantBox p{
+    width:210px; font-size:19px;
+    transition:all 1s ease; 
+   }
+
+   .createBtn-box{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+   .createAcctBtn{
+    width:100%;
+    transition:all 1s ease; 
+   }
+
+
+
+
 
  }
 

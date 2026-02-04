@@ -82,7 +82,7 @@ function Header() {
          </button>
 
          <button className="signin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
-          <Link to="/signup">SIGN IN</Link>
+          <Link to="/agentsortenants">SIGN UP</Link>
          </button>
        </div>
 
@@ -139,7 +139,7 @@ function Header() {
           </button>
 
           <button className="sidebarsignin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[10px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
-            <Link to="/signup">SIGN IN</Link>
+            <Link to="/agentsortenants">SIGN UP</Link>
           </button>
         </div>
       </aside>
