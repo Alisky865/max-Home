@@ -549,17 +549,17 @@
    }
 
 
-   .details-box2 div{
-    width:100%;
-   }
+   
 
-   .details-box2 label{
+   .datelabel{
     font-size:10px;
    }
 
     .dateInput{
-    width:125px;
+    width:145; font-size:11px; padding:7px 14px;
+    position:relative; left:-1px;
    }
+
 
    .details-box3a{
     width:100%;
@@ -571,14 +571,36 @@
 
    .details-box3a div{
     width:100%;
+    position:relative; left:-17px;
    }
 
-   .maleGender, .femaleGender{
-    font-size:7px;
+   .maleGender{
+    transform:scale(0.7)
    }
+
+   .femaleGender{
+    transform:scale(0.7);
+    margin-left:0px;
+   }
+
+
+   .femalelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   .malelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   
 
    .details-box3a label{
-    font-size:12px;
+    font-size:11px; margin-left:-7px
+   }
+
+
+   .details-box3b{
+    position:relative; left:6px;
    }
 
    .details-box3b p{
@@ -586,8 +608,12 @@
    }
 
    .details-box3b select{
-    width:125px;
+    width:132px;
     font-size:10px;
+   }
+
+   .details-box4{
+    position:relative; left:6px;
    }
 
    .details-box4 p{
@@ -598,13 +624,22 @@
     width:100%;
    }
 
-   .details-box4 input{
-    width:123px;
-    font-size:7px;
+   .fileUpload{
+    width:130px;
+    font-size:8px;
    }
 
    .agree-terms{
     font-size:10px;
+   }
+
+   .stateBox{
+    position:relative; left:0px;
+   }
+
+   .stateInput{
+    width:133px;
+    
    }
 
 
@@ -623,104 +658,213 @@
 
    }
 
-    @media(max-width:378px)
-   { .dateInput{
-    width:122px;
-   }
 
-   .dateInput{
-
-    position:relative; left:-5px;
-
-   }
-
-   .stateInput{
-
-    position:relative; left:3px;
-
-   }
-
-   .stateLabel{
-
-    position:relative; left:4px;
-
-   }
-
-   .details-box3b select{
-    width:120px;
-    font-size:10px;
-    position:relative; left:-3px;
-   }
-
-   .details-box3b p{
-    font-size:9px;
-   }
-
-   
-
- 
-  }
-
-
-
-  @media(max-width:370px)
-   { .dateInput{
-    width:120px;
-   }
-
-   .details-box3b select{
-    width:120px;
-    font-size:10px;
-   }
-
-   .details-box3b p{
-    font-size:9px;
-   }
-
-   
-
- 
-  }
 
   @media(max-width:365px)
    {.signinBox{
     width:115%;
     transition:all 1s ease;
     }
-     .dateInput{
-    width:145px;
-   }
-   .datelabel{
-    position:relative; left:-3px;
+
+     .datelabel{
+    font-size:10px;
    }
 
-   .dateInput2 {
+   /* .details-box2{
+    width:145px;
+   } */
+
+    .dateInput{
+    width:195px; font-size:11px; padding:7px 15px;
     position:relative; left:-5px;
    }
 
-   .stateInput {
-    position:relative; left:5px;
+
+   .details-box3a{
+    width:100%;
    }
 
-   .stateLabel{
+   .details-box3a p{
+    font-size:10px;
+   }
+
+   .details-box3a div{
+    width:100%;
+    position:relative; left:-17px;
+   }
+
+   .maleGender{
+    transform:scale(0.7)
+   }
+
+   .femaleGender{
+    transform:scale(0.7);
+    margin-left:0px;
+   }
+
+
+   .femalelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   .malelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   
+
+   .details-box3a label{
+    font-size:11px; margin-left:-7px
+   }
+
+
+   .details-box3b{
     position:relative; left:6px;
    }
 
-   .details-box3b select{
-    width:143px;
+   .details-box3b p{
     font-size:10px;
+   }
+
+   .details-box3b select{
+    width:139px;
+    font-size:10px;
+   }
+
+   .details-box4{
+    position:relative; left:6px;
+   }
+
+   .details-box4 p{
+    font-size:10px;
+   }
+
+   .details-box4 div{
+    width:141px;
+   }
+
+   /* .fileUpload{
+    width:120px;
+    font-size:7px;
+   } */
+
+   .agree-terms{
+    font-size:10px;
+   }
+
+   .stateBox{
+    position:relative; left:0px;
+   }
+
+   .stateInput{
+    width:142px;
+    
+   }
+
+ 
+  }
+
+   @media(max-width:355px)
+   {.signinBox{
+    width:115%;
+    transition:all 1s ease;
+    }
+
+     .datelabel{
+    font-size:10px;
+   }
+
+   /* .details-box2{
+    width:145px;
+   } */
+
+    .dateInput{
+    width:195px; font-size:11px; padding:7px 15px;
     position:relative; left:-2px;
    }
 
-   .details-box3b p{
-    font-size:9px;
+
+   .details-box3a{
+    width:100%;
    }
 
-   .details-box4 input{
-    width:142px;
-    font-size:8px;
-    position:relative; left:-1px;
+   .details-box3a p{
+    font-size:10px;
    }
+
+   .details-box3a div{
+    width:100%;
+    position:relative; left:-17px;
+   }
+
+   .maleGender{
+    transform:scale(0.7)
+   }
+
+   .femaleGender{
+    transform:scale(0.7);
+    margin-left:0px;
+   }
+
+
+   .femalelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   .malelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   
+
+   .details-box3a label{
+    font-size:11px; margin-left:-7px
+   }
+
+
+   .details-box3b{
+    position:relative; left:6px;
+   }
+
+   .details-box3b p{
+    font-size:10px;
+   }
+
+   .details-box3b select{
+    width:139px;
+    font-size:10px;
+   }
+
+   .details-box4{
+    position:relative; left:6px;
+   }
+
+   .details-box4 p{
+    font-size:10px;
+   }
+
+   .details-box4 div{
+    width:141px;
+   }
+
+   /* .fileUpload{
+    width:120px;
+    font-size:7px;
+   } */
+
+   .agree-terms{
+    font-size:10px;
+   }
+
+   .stateBox{
+    position:relative; left:0px;
+   }
+
+   .stateInput{
+    width:142px;
+    
+   }
+
  
   }
 
@@ -737,7 +881,7 @@
    font-size:7px;
    }
 
-   .dateInput{
+   /* .dateInput{
     width:140px;
    }
 
@@ -747,106 +891,216 @@
 
    .stateInput {
     position:relative; left:5px;
-   }
+   } */
 
  }
 
-  
+ @media(max-width:346px)
+   {.signinBox{
+    width:115%;
+    transition:all 1s ease;
+    }
 
-  @media(max-width:346px)
-   {.dateInput{
-    width:137px;
-   }
-   .datelabel{
-    position:relative; left:-3px;
-   }
-
-   .dateInput2 {
-    position:relative; left:-4px;
-   }
-
-   .stateInput {
-    position:relative; left:5px;
-   }
-
-   .stateLabel{
-    position:relative; left:6px;
-   }
-
-   .details-box3b select{
-    width:137px;
+     .datelabel{
     font-size:10px;
+   }
+
+   /* .details-box2{
+    width:145px;
+   } */
+
+    .dateInput{
+    width:195px; font-size:11px; padding:7px 15px;
     position:relative; left:-2px;
    }
 
-   .details-box3b p{
-    font-size:9px;
+
+   .details-box3a{
+    width:100%;
    }
 
-   .details-box4 input{
-    width:135px;
-    font-size:8px;
-    position:relative; left:-1px;
+   .details-box3a p{
+    font-size:10px;
    }
+
+   .details-box3a div{
+    width:100%;
+    position:relative; left:-17px;
+   }
+
+   .maleGender{
+    transform:scale(0.7)
+   }
+
+   .femaleGender{
+    transform:scale(0.7);
+    margin-left:0px;
+   }
+
+
+   .femalelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   .malelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   
+
+   .details-box3a label{
+    font-size:11px; margin-left:-7px
+   }
+
+
+   .details-box3b{
+    position:relative; left:6px;
+   }
+
+   .details-box3b p{
+    font-size:10px;
+   }
+
+   .details-box3b select{
+    width:135px;
+    font-size:10px;
+   }
+
+   .details-box4{
+    position:relative; left:6px;
+   }
+
+   .details-box4 p{
+    font-size:10px;
+   }
+
+   .details-box4 div{
+    width:136px;
+    position:relative; left:-7px;
+   }
+
+   /* .fileUpload{
+    width:120px;
+    font-size:7px;
+   } */
+
+   .agree-terms{
+    font-size:10px;
+   }
+
+   .stateBox{
+    position:relative; left:0px;
+   }
+
+   .stateInput{
+    width:137px;
+    
+   }
+
+ 
   }
+
+  
+
+  
+
+
+
 
 
    @media(max-width:339px)
    {.dateInput{
     width:132px;
    }
-   .datelabel{
-    position:relative; left:-3px;
+
+   .dateInput{
+    width:195px; font-size:11px; padding:7px 14px;
+    position:relative; left:--1px;
+   }
+ 
+  }
+
+  @media(max-width:336px)
+   { .details-box3a{
+    width:100%;
    }
 
-   .dateInput2 {
-    position:relative; left:-4px;
+   .details-box3a p{
+    font-size:10px;
    }
 
-   .stateInput {
-    position:relative; left:4px;
+   .details-box3a div{
+    width:100%;
+    position:relative; left:-17px;
    }
 
-   .stateLabel{
+   .maleGender{
+    transform:scale(0.7)
+   }
+
+   .femaleGender{
+    transform:scale(0.7);
+    margin-left:0px;
+   }
+
+
+   .femalelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   .malelabel{
+    position:relative; left:-2px; margin-left:0px;
+   }
+
+   
+
+   .details-box3a label{
+    font-size:11px; margin-left:-7px
+   }
+
+
+   .details-box3b{
     position:relative; left:6px;
    }
 
-   .details-box3b select{
-    width:133px;
-    font-size:10px;
-    position:relative; left:-2px;
-   }
-
    .details-box3b p{
-    font-size:9px;
-   }
-
-   .details-box4 input{
-    width:130px;
-    font-size:8px;
-    position:relative; left:-1px;
-   }
-  }
-
-  @media(max-width:335px)
-   {.dateInput{
-    width:130px;
+    font-size:10px;
    }
 
    .details-box3b select{
-    width:130px;
+    width:127px;
     font-size:10px;
-    position:relative; left:-2px;
    }
 
-   .details-box3b p{
-    font-size:9px;
+   .details-box4{
+    position:relative; left:6px;
    }
 
-   .details-box4 input{
-    width:130px;
-    font-size:8px;
-    position:relative; left:-1px;
+   .details-box4 p{
+    font-size:10px;
+   }
+
+   .details-box4 div{
+    width:127px;
+    position:relative; left:-7px;
+   }
+
+   /* .fileUpload{
+    width:120px;
+    font-size:7px;
+   } */
+
+   .agree-terms{
+    font-size:10px;
+   }
+
+   .stateBox{
+    position:relative; left:0px;
+   }
+
+   .stateInput{
+    width:127px;
+    
    }
 
    .agentTenant{
@@ -888,52 +1142,6 @@
     width:100%;
     padding:10px 5px;
     }
-
-    
-    .dateInput{
-    width:120px;
-   }
-
-   .stateInput{
-    position:relative; left:5px;
-   }
-
-   .stateLabel{
-    position:relative; left:6px;
-    font-size:8px
-   }
-
-    .dateInput2{
-    position:relative; right:4px;
-   }
-
-   .datelabel{
-    position:relative; left:-3px; font-size:8px;
-   }
-
-   .details-box3a p{
-    font-size:8px;
-   }
-
-   .details-box3b select{
-    width:122px;
-    font-size:10px;
-    position:relative; left:-1px;
-   }
-
-   .details-box3b p{
-    font-size:8px;
-   }
-
-   .details-box4 input{
-    width:120px;
-    font-size:5px;
-   }
-
-   .details-box4 p{
-    
-    font-size:8px;
-   }
 
    .email-input{
     width:350px;
@@ -1017,9 +1225,7 @@
   }
 
   @media(max-width:322px)
-  {.dateInput{
-    width:122px;
-   }
+  {
     
    .para1{
     font-size:11px;
@@ -1033,6 +1239,71 @@
    padding:5px 9px;
    transition: all 2s ease;
    font-size:7px;
+   }
+
+   .dateInput{
+    padding:7px 10px;
+   }
+
+   
+   .details-box3a p{
+    font-size:10px;
+   }
+
+   .details-box3a div{
+    width:100%;
+    position:relative; left:-17px;
+   }
+
+    
+
+   .details-box3a label{
+    font-size:11px; margin-left:-7px
+   }
+
+
+   .details-box3b{
+    position:relative; left:6px;
+   }
+
+   .details-box3b p{
+    font-size:10px;
+   }
+
+   .details-box3b select{
+    width:120px;
+    font-size:10px;
+   }
+
+   .details-box4{
+    position:relative; left:6px;
+   }
+
+   .details-box4 p{
+    font-size:10px;
+   }
+
+   .details-box4 div{
+    width:120px;
+    position:relative; left:-7px;
+   }
+
+   /* .fileUpload{
+    width:120px;
+    font-size:7px;
+   } */
+
+   .agree-terms{
+    font-size:10px;
+   }
+
+   .stateBox{
+    position:relative; left:0px;
+   }
+
+   .stateInput{
+    width:120px;
+    
    }
 
  }
@@ -1069,11 +1340,85 @@
     transition:all 1s ease; 
    }
 
+   .details-box3b select{
+    width:120px;
+    font-size:10px;
+   }
+
+   .details-box4{
+    position:relative; left:6px;
+   }
+
+   .details-box4 p{
+    font-size:10px;
+   }
+
+   .details-box4 div{
+    width:120px;
+    position:relative; left:-7px;
+   }
+
+   .stateBox{
+    position:relative; left:0px;
+   }
+
+   .stateInput{
+    width:120px;
+    
+   }
+
 
 
 
 
  }
+
+ @media(max-width:313px){
+   .dateInput{
+    padding:7px 7px;
+   }
+
+   .details-box3b select{
+    width:117px;
+    font-size:10px;
+   }
+
+   .details-box3b p{
+    font-size:9px;
+   }
+
+   .details-box4{
+    position:relative; left:6px;
+   }
+
+   .details-box4 p{
+    font-size:10px;
+   }
+
+   .details-box4 div{
+    width:115px;
+    position:relative; left:-7px;
+   }
+   
+
+   .stateInput{
+    width:117px;
+    
+   }
+
+
+
+
+
+ }
+
+
+
+
+
+  
+
+ 
 
 
 
