@@ -110,19 +110,18 @@ function AgentSignUp() {
              </div>
 
              <div className="details-box2 grid grid-rows-1 w-[160px]  
-                 py-[3px] px-[1px] relative left-[0px] place-content-center">
+                 py-[3px] px-[4px] relative left-[0px] place-content-start">
                 <label htmlFor="Birthdate" className="datelabel text-[#D0E3FF] 
                 font-sans font-normal text-[11px] relative left-[1px]">
                   Date Of Birth
                 </label>
-                <input className="dateInput dater dateInput2 text-black font-sans font-normal text-[11px] bg-[#D0E3FF] px-[7px] py-[7px] my-[3px]
-                rounded-[5px] h-max w-[150px]" type="date" name="date" placeholder="Date Of Birth" required/>
+                <input className="dateInput dater  text-black font-sans font-normal text-[11px] bg-[#D0E3FF] px-[7px] py-[7px] my-[3px] rounded-[5px] h-max w-[150px]" type="date" name="date" placeholder="Date Of Birth" required/>
                  {/* <p>Enter this field</p> */}
                    
              </div>
 
              <div className="stateBox grid grid-rows w-[100%] overflow-hidden 
-                py-[3px] px-[1px] relative right-[6px] place-content-center">
+                py-[3px] px-[4px] place-content-start">
                 <label htmlFor="State" className="stateLabel text-[#D0E3FF]  
                 font-sans font-normal text-[11px] relative left-[1px]">
                 State of Origin
@@ -141,10 +140,11 @@ function AgentSignUp() {
                     }
                 </select>
                 
+                
              </div>
 
              <div className="stateBox grid grid-rows-1 w-[100%] overflow-hidden 
-                py-[3px] px-[1px] relative right-[7px] place-content-center">
+                py-[3px] px-[4px] place-content-start">
                 <label htmlFor="State" className="stateLabel text-[#D0E3FF]  
                 font-sans font-normal text-[11px] relative left-[1px]">
                 L.G.A
@@ -163,22 +163,22 @@ function AgentSignUp() {
                     ))
                   }
                </select>
-                {/* <p>this field cant be empty</p> */}
+                 {/* <p>this field cant be empty</p>  */}
 
              </div>
 
-             <div className="details-box3b grid grid-rows-2 
-                place-content-center
-                py-[3px] px-[5px] h-max mt-[5px]">
-                <p className="text-[11px] text-[#D0E3FF] font-sans   
-                  font-normal mb-[0px]  relative right-[5px] ">
+             <div className="details-box3b grid grid-rows-1 
+                place-content-start
+                py-[3px] px-[3px] h-max mt-[5px] ">
+                <p className="docTypeLabel text-[11px] text-[#D0E3FF] font-sans   
+                  font-normal mb-[0px] relative left-[2px]  ">
                   Type Of Identity Document
                 </p>
-                <div className="flex flex-row mt-[-3px]">
+                <div className="flex flex-row">
                   <select name="idProof" className="idSelector 
                     text-[#334EAC] text-[11px] font-sans font-bold 
                     bg-[#D0E3FF] border-none rounded-[5px] p-[5px] 
-                    h-[28px] w-[149px] relative right-[7px] 
+                    h-[28px] w-[149px]
                     cursor-pointer">
                     <option value="0" disabled>Proof Of 
                       Identity
@@ -193,153 +193,28 @@ function AgentSignUp() {
 
                   </select>
                 </div>
+                {/* <p>this field cant be empty</p>  */}
                   
              </div> 
 
-             <div className="details-box4 grid grid-rows-1 place-content-center 
-                px-[5px] py-[3px] mt-[5px] relative ">
-                <p className="text-[11px] text-[#D0E3FF] font-sans   
-                  font-normal mb-[0px] relative left-[-5px]">
+             <div className="details-box4 grid grid-rows-1 place-content-start
+                px-[3px] py-[3px] h-max mt-[5px] ">
+                <p className="docUploadLabel text-[11px] text-[#D0E3FF] font-sans   
+                  font-normal mb-[0px] relative left-[2px]">
                   Upload Proof Of Identity
                 </p>
-                <div className="flex flex-row align-middle 
-                  justify-start relative left-[-8px]
-                  mt-[4px]">
+                <div className="flex flex-row
+                  ">
                   <input className="fileUpload py-[5px] px-[3px] 
                     w-[151px] h-[max-content] text-[#334EAC] 
                     text-[9px] font-sans font-bold 
                     bg-[#D0E3FF] border-none rounded-[5px]" type="file" accept=".jpg, .png, .pdf "/>
-              </div>
+               </div>
+               {/* <p>this field cant be empty</p>  */}
+
              </div>
 
 
-           </div>
-
-
-           <div className="clickHereBtn ">
-             <div className="details-box2 grid grid-cols-2">
-                 {/* <div className="details-box2 grid grid-rows w-[160px]  
-                   overflow-hidden py-[3px] px-[1px] relative left-[7px] place-content-center">
-                   <label htmlFor="Birthdate" className="datelabel text-[#D0E3FF] 
-                    font-sans font-normal text-[11px] relative left-[1px]">
-                      Date Of Birth
-                   </label>
-                   <input className="dateInput dateInput2 text-black font-sans font-normal text-[11px] bg-[#D0E3FF] px-[7px] py-[7px] my-[3px] border-[2px] border-none 
-                   rounded-[5px] h-max w-[150px]" type="date" name="date" placeholder="Date Of Birth" required/>
-                   <p>Enter this field</p>
-                   
-                 </div> */}
-                 <div className="grid grid-rows w-[100%] overflow-hidden 
-                   py-[3px] px-[1px] relative right-[7px] place-content-center">
-                   {/* <label htmlFor="State" className="stateLabel text-[#D0E3FF]  
-                   font-sans font-normal text-[11px] relative left-[1px]">
-                    State of Origin
-                   </label>
-                   <select className="dateInput stateInput 
-                    text-[#334EAC] font-sans font-normal text-[11px] 
-                     bg-[#D0E3FF] px-[7px] py-[7px] my-[3px] 
-                     border-[2px] border-none rounded-[5px] h-max 
-                      w-[150px]" name="stateOfOrigin" 
-                      value={stateDetails.stateOfOrigin}
-                      onChange={pickState} required>
-                       <option value="">Select State</option>
-                        {states.map((state)=>(<option 
-                         key={state} value={state}> {state} </option>
-                         ))
-                        }
-                   </select> */}
-
-                   {/* <select className="dateInput stateInput 
-                      text-[#334EAC] font-sans font-normal text-[11px] 
-                      bg-[#D0E3FF] px-[7px] py-[7px] my-[3px] 
-                      border-[2px] border-none rounded-[5px] h-max 
-                      w-[150px]" name="localGovernment" 
-                      value={stateDetails.localGovernment}
-                      onChange={pickState}
-                      disabled={!stateDetails.stateOfOrigin} required>
-                      <option value="">LGA</option>
-                       {lgas.map((lgA)=>(<option 
-                        key={lgA} value={lgA}> {lgA} </option>
-                        ))
-                      }
-                   </select> */}
-                   
-                </div>
-                  
-             </div>
-
-
-             <div className="details-box3 grid grid-cols-2 
-               align-middle gap-[5px] place-content-center p-[5px] 
-                mt-[-5px] h-max ">
-                {/* <div className="details-box3a grid grid-rows-2
-                   p-[5px] relative left-[3px] h-max ">
-                   <p className="text-[11px] text-[#D0E3FF] font-sans   
-                     font-normal mb-[0px] mt-[1px]">
-                      Gender
-                   </p>
-                   <div className="flex flex-row align-middle
-                     justify-start py-[5px] px-[2px] relative left-[-3px]
-                     mt-[-7px]">
-                     <input className="maleGender font-sans font-bold text-[11px] bg-[#D0E3FF]" type="radio" name="genderChoice" value="male"/>
-                     <label htmlFor="maleGender" className="
-                       text-[#D0E3FF] text-[13px] font-sans font-normal ml-[3px]">
-                       Male
-                     </label>
-
-                     <input className="femaleGender font-sans font-bold text-[11px] bg-[#D0E3FF] ml-[7px]" type="radio" name="genderChoice" value="female"/>
-                     <label htmlFor="maleGender" className="
-                       text-[#D0E3FF] text-[13px] font-sans font-normal ml-[3px]">
-                       Female
-                     </label>
-                  </div>
-                </div> */}
-
-                {/* <div className="details-box3b grid grid-rows-2 place-content-center
-                   py-[3px] px-[5px] h-max mt-[2px]">
-                   <p className="text-[11px] text-[#D0E3FF] font-sans   
-                     font-normal mb-[0px]">
-                      Type Of Identity Document
-                   </p>
-                   <div className="flex flex-row mt-[-5px]">
-                     <select name="idProof" className="idSelector 
-                       text-[#334EAC] text-[11px] font-sans font-bold 
-                       bg-[#D0E3FF] border-none rounded-[5px] p-[5px] 
-                        h-[28px] w-[149px] relative right-[6px] 
-                        cursor-pointer">
-                       <option value="0" disabled>Proof Of 
-                         Identity
-                       </option>
-                       <option value="Passport">Passport</option>
-                       <option value="Driving License">
-                         Driving License
-                       </option>
-                       <option value="National ID">
-                         National ID
-                       </option>
-
-                     </select>
-                  </div>
-                  
-                </div>                 */}
-             </div>
-             
-
-             {/* <div className="details-box4 grid grid-rows-2 align-middle 
-                   p-[5px] relative left-[7px]">
-                   <p className="text-[11px] text-[#D0E3FF] font-sans   
-                     font-normal mb-[0px] relative left-[2px]">
-                      Upload Proof Of Identity
-                   </p>
-                   <div className="flex flex-row align-middle 
-                     justify-start relative 
-                     mt-[-5px]">
-                     <input className="fileUpload py-[5px] px-[3px] 
-                       w-[151px] h-[max-content] text-[#334EAC] 
-                       text-[9px] font-sans font-bold 
-                       bg-[#D0E3FF] border-none rounded-[5px]" type="file" accept=".jpg, .png, .pdf "/>
-                  </div>
-             </div> */}
            </div>
 
 

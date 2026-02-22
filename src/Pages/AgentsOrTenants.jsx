@@ -15,6 +15,24 @@ function AgentsOrTenants() {
     setChoice(e.target.value);
   }
 
+  // function pickSignUpBoxTenant(){
+  //   console.log('hello Tenant')
+  //   setChoice('Tenant');
+  //   // console.log(choice)
+  // }
+
+  // function pickSignUpBoxAgent(){
+  //   console.log('hello Agent')
+  //   setChoice('Agent');
+  //   // console.log(choice)
+  // }
+
+  function pickSignUpBox(yourChoice){
+    setChoice(yourChoice);
+    // console.log(choice)
+  }
+
+
   const isdisabled = choice.trim() === '';
 
   const createAcct = ()=>{
@@ -47,36 +65,38 @@ function AgentsOrTenants() {
 
            <div className="tenantBox grid grid-cols place-content-start
              p-[10px] mb-[20px] border-[2px] border-[solid] 
-              border-[#D0E3FF] rounded-[7px] break-words w-[max-content] ">
+              border-[#D0E3FF] rounded-[7px] break-words w-[max-content] cursor-pointer bg-[#D0E3FF]"
+              onClick={()=>{pickSignUpBox('Tenant')}}>
 
              <div className="flex flex-row place-content-between 
                 py-[5px] mb-[10px] w-[220px]">
-               <i className="text-[19px] text-[#D0E3FF] fa fa-user-circle"></i>
+               <i className="text-[19px] text-[#334EAC] fa fa-user-circle"></i>
                <input className="cursor-pointer scale-150
                 bg-[#334EAC]" id="check-box-input" type="radio" value="Tenant" name="AgentTenant"
-                checked={ choice === 'Tenant'}
+                checked={choice === 'Tenant'}
                 onChange={pickSignUpChoice}/>
              </div>
-             <p className="text-[15px] text-[#D0E3FF] font-sans font-normal mt-[7px] w-[220px] ">
-               I'm Looking For A property To Rent/Buy
+             <p className="text-[15px] text-[#334EAC] font-sans font-normal mt-[7px] w-[220px] ">
+               I'm Looking For A property To <span className="text-[19px] font-bold ">Rent/Buy</span>
              </p>
 
            </div>
 
-           <div className="tenantBox grid grid-cols place-content-start
+           <div className="agentBox tenantBox grid grid-cols place-content-start
              p-[10px] mb-[10px] border-[2px] border-[solid] 
-              border-[#D0E3FF] rounded-[7px] break-words w-[max-content] ">
+              border-[#D0E3FF] rounded-[7px] break-words w-[max-content] cursor-pointer bg-[#D0E3FF]" 
+              onClick={()=>{pickSignUpBox('Agent')}}>
 
              <div className="flex flex-row place-content-between 
                 py-[5px] mb-[10px] w-[220px]">
-               <i className="text-[19px] text-[#D0E3FF] fa fa-house-user"></i>
+               <i className="text-[19px] text-[#334EAC] fa fa-house-user"></i>
                <input className="cursor-pointer scale-150
                 bg-[#334EAC]" id="check-box-input" type="radio" value="Agent" name="AgentTenant"
                 checked={choice === 'Agent'}
                 onChange={pickSignUpChoice}/>
              </div>
-             <p className="text-[15px] text-[#D0E3FF] font-sans font-normal mt-[7px]  w-[220px]">
-               I'm A Verified Agent With Properties For Sale
+             <p className="text-[15px] text-[#334EAC] font-sans font-normal mt-[7px]  w-[220px]">
+               I'm A Verified <span className="text-[19px] font-bold ">Agent</span> With Properties For Sale
              </p>
 
            </div>

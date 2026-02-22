@@ -40,6 +40,15 @@ function Header() {
 
   }
 
+  const closeSideBar = ()=>{
+    const clickbtn = document.querySelector(".sideBarBtn");
+    clickbtn.classList.toggle("sideBarToggling");
+
+    const sideBar = document.querySelector(".sideBar");
+    sideBar.classList.toggle("sideBarShow");
+
+  }
+
   return (
     <>
 
@@ -76,14 +85,18 @@ function Header() {
        </nav>
 
        <div className="login-box1 flex flex-row flex-1 align-middle justify-end p-3 m-[5px]">
-         <button className="login-btn text-[#334EAC] font-sans 
-         font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
-           <Link to="/login"> LOG IN</Link>
-         </button>
+         <Link to="/login">
+           <button className="login-btn text-[#334EAC] font-sans 
+           font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
+           LOG IN
+           </button>
+         </Link>
 
-         <button className="signin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
-          <Link to="/agentsortenants">SIGN UP</Link>
-         </button>
+         <Link to="/agentsortenants">
+           <button className="signin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[20px] mr-[15px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
+           SIGN UP
+           </button>
+         </Link>
        </div>
 
        <div className="sideBarBtnBox hidden  flex-row flex-1 align-middle 
@@ -100,7 +113,8 @@ function Header() {
 
       <aside className="sideBar z-[15] hidden
         align-middle justify-start px-[15px] py-[3px] h-screen w-[max-content] fixed top-[0px] left-[-200px] bottom-[0px] m-[0px]
-          bg-[#4E4C4C] ">
+          bg-[#4E4C4C] " 
+          onClick={closeSideBar}>
           <div className="logo-box flex flex-row font-sans 
             text-[11px] font-bold text-[#D0E3FF] p-[3px]  mb-[35px] ">
             <img className="relative left-[50px] w-11 " id="brand-pix" src="/logo.webp" alt="LOGO"></img>
@@ -132,15 +146,19 @@ function Header() {
               </li>
           </ul>
 
-          <div className="sidebar-login-box flex flex-row gap-[10px] align-middle justify-between py-[3px] px-[0px] m-[5px] h-auto">
-          <button className="sidebarlogin-btn text-[#334EAC] font-sans 
-          font-bold py-[5px] px-[10px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
-            <Link to="/login"> LOG IN</Link>
-          </button>
+          <div className="sidebar-login-box flex flex-row flex-[2] gap-[10px] place-items-end py-[3px] px-[0px] m-[5px] ">
+           <Link to="/login"> 
+             <button className="sidebarlogin-btn text-[#334EAC] font-sans 
+             font-bold py-[5px] px-[13px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
+             LOG IN
+             </button>
+           </Link>
 
-          <button className="sidebarsignin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[10px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
-            <Link to="/agentsortenants">SIGN UP</Link>
-          </button>
+           <Link to="/agentsortenants">
+             <button className="sidebarsignin-btn text-[#334EAC] font-sans text-[13px] font-bold py-[5px] px-[13px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
+             SIGN UP
+             </button>
+           </Link>
         </div>
       </aside>
 

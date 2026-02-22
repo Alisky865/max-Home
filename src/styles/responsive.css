@@ -556,8 +556,8 @@
    }
 
     .dateInput{
-    width:145; font-size:11px; padding:7px 14px;
-    position:relative; left:-1px;
+    width:145px; font-size:11px; padding:7px 14px;
+    position:relative;
    }
 
 
@@ -598,25 +598,16 @@
     font-size:11px; margin-left:-7px
    }
 
-
-   .details-box3b{
-    position:relative; left:6px;
-   }
-
-   .details-box3b p{
+   .docTypeLabel{
     font-size:10px;
    }
 
-   .details-box3b select{
-    width:132px;
+   .idSelector{
+    width:134px;
     font-size:10px;
    }
 
-   .details-box4{
-    position:relative; left:6px;
-   }
-
-   .details-box4 p{
+   .docUploadLabel{
     font-size:10px;
    }
 
@@ -674,9 +665,13 @@
     width:145px;
    } */
 
+   .details-box2{
+    width:100%;
+   }
+
     .dateInput{
-    width:195px; font-size:11px; padding:7px 15px;
-    position:relative; left:-5px;
+    width:145px; font-size:11px; padding:7px 15px;
+    position:relative;
    }
 
 
@@ -717,37 +712,31 @@
     font-size:11px; margin-left:-7px
    }
 
-
-   .details-box3b{
-    position:relative; left:6px;
-   }
-
-   .details-box3b p{
+   .docTypeLabel{
     font-size:10px;
    }
 
-   .details-box3b select{
-    width:139px;
+   .idSelector{
+    width:146px;
     font-size:10px;
    }
 
-   .details-box4{
-    position:relative; left:6px;
-   }
-
-   .details-box4 p{
+   .docUploadLabel{
     font-size:10px;
    }
 
    .details-box4 div{
-    width:141px;
+    width:100%;
    }
 
-   /* .fileUpload{
-    width:120px;
-    font-size:7px;
-   } */
+   .fileUpload{
+    width:130px;
+    font-size:8px;
+   }
 
+
+
+  
    .agree-terms{
     font-size:10px;
    }
@@ -757,7 +746,7 @@
    }
 
    .stateInput{
-    width:142px;
+    width:147px;
     
    }
 
@@ -780,7 +769,7 @@
 
     .dateInput{
     width:195px; font-size:11px; padding:7px 15px;
-    position:relative; left:-2px;
+    position:relative;
    }
 
 
@@ -821,36 +810,6 @@
     font-size:11px; margin-left:-7px
    }
 
-
-   .details-box3b{
-    position:relative; left:6px;
-   }
-
-   .details-box3b p{
-    font-size:10px;
-   }
-
-   .details-box3b select{
-    width:139px;
-    font-size:10px;
-   }
-
-   .details-box4{
-    position:relative; left:6px;
-   }
-
-   .details-box4 p{
-    font-size:10px;
-   }
-
-   .details-box4 div{
-    width:141px;
-   }
-
-   /* .fileUpload{
-    width:120px;
-    font-size:7px;
-   } */
 
    .agree-terms{
     font-size:10px;
@@ -881,18 +840,27 @@
    font-size:7px;
    }
 
-   /* .dateInput{
-    width:140px;
+  .docTypeLabel{
+    font-size:10px;
    }
 
-   .dateInput2 {
-    position:relative; left:-4px;
+   .idSelector{
+    width:142px;
+    font-size:10px;
    }
 
-   .stateInput {
-    position:relative; left:5px;
-   } */
+   .docUploadLabel{
+    font-size:10px;
+   }
 
+   .details-box4 div{
+    width:100%;
+   }
+
+   .fileUpload{
+    width:125px;
+    font-size:8px;
+   }
  }
 
  @media(max-width:346px)
@@ -910,8 +878,8 @@
    } */
 
     .dateInput{
-    width:195px; font-size:11px; padding:7px 15px;
-    position:relative; left:-2px;
+    width:145px; font-size:11px; 
+    position:relative;
    }
 
 
@@ -953,36 +921,10 @@
    }
 
 
-   .details-box3b{
-    position:relative; left:6px;
-   }
-
-   .details-box3b p{
+   .idSelector{
+    width:137px;
     font-size:10px;
    }
-
-   .details-box3b select{
-    width:135px;
-    font-size:10px;
-   }
-
-   .details-box4{
-    position:relative; left:6px;
-   }
-
-   .details-box4 p{
-    font-size:10px;
-   }
-
-   .details-box4 div{
-    width:136px;
-    position:relative; left:-7px;
-   }
-
-   /* .fileUpload{
-    width:120px;
-    font-size:7px;
-   } */
 
    .agree-terms{
     font-size:10px;
@@ -1014,8 +956,8 @@
    }
 
    .dateInput{
-    width:195px; font-size:11px; padding:7px 14px;
-    position:relative; left:--1px;
+    width:145px; font-size:11px; padding:7px 14px;
+    position:relative;
    }
  
   }
@@ -1058,37 +1000,10 @@
     font-size:11px; margin-left:-7px
    }
 
-
-   .details-box3b{
-    position:relative; left:6px;
-   }
-
-   .details-box3b p{
+   .idSelector{
+    width:132px;
     font-size:10px;
    }
-
-   .details-box3b select{
-    width:127px;
-    font-size:10px;
-   }
-
-   .details-box4{
-    position:relative; left:6px;
-   }
-
-   .details-box4 p{
-    font-size:10px;
-   }
-
-   .details-box4 div{
-    width:127px;
-    position:relative; left:-7px;
-   }
-
-   /* .fileUpload{
-    width:120px;
-    font-size:7px;
-   } */
 
    .agree-terms{
     font-size:10px;
@@ -1099,7 +1014,7 @@
    }
 
    .stateInput{
-    width:127px;
+    width:133px;
     
    }
 
@@ -1218,6 +1133,38 @@
     position:relative; left:0px;
    }
 
+    .docTypeLabel{
+    font-size:10px;
+   }
+
+   .idSelector{
+    width:126px;
+    font-size:10px;
+   }
+
+   .docUploadLabel{
+    font-size:10px;
+   }
+
+   .details-box4 div{
+    width:100%;
+   }
+
+   .fileUpload{
+    width:130px;
+    font-size:8px;
+   }
+
+   
+   .stateBox{
+    position:relative; left:0px;
+   }
+
+   .stateInput{
+    width:125px;
+    
+   }
+
 
    
 
@@ -1262,48 +1209,40 @@
    }
 
 
-   .details-box3b{
-    position:relative; left:6px;
-   }
-
-   .details-box3b p{
+   .docTypeLabel{
     font-size:10px;
    }
 
-   .details-box3b select{
-    width:120px;
+   .idSelector{
+    width:126px;
     font-size:10px;
    }
 
-   .details-box4{
-    position:relative; left:6px;
-   }
-
-   .details-box4 p{
+   .docUploadLabel{
     font-size:10px;
    }
 
    .details-box4 div{
-    width:120px;
-    position:relative; left:-7px;
+    width:100%;
    }
 
-   /* .fileUpload{
-    width:120px;
-    font-size:7px;
-   } */
-
-   .agree-terms{
-    font-size:10px;
+   .fileUpload{
+    width:130px;
+    font-size:8px;
    }
 
+   
    .stateBox{
     position:relative; left:0px;
    }
 
    .stateInput{
-    width:120px;
+    width:125px;
     
+   }
+
+   .agree-terms{
+    font-size:10px;
    }
 
  }
@@ -1387,7 +1326,7 @@
     font-size:9px;
    }
 
-   .details-box4{
+   /* .details-box4{
     position:relative; left:6px;
    }
 
@@ -1399,7 +1338,7 @@
     width:115px;
     position:relative; left:-7px;
    }
-   
+    */
 
    .stateInput{
     width:117px;
