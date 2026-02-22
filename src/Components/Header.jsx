@@ -146,7 +146,7 @@ function Header() {
               </li>
           </ul>
 
-          <div className="sidebar-login-box flex flex-row flex-[2] gap-[10px] place-items-end py-[3px] px-[0px] m-[5px] ">
+          <div className="sidebar-login-box flex flex-row gap-[10px] place-items-end py-[3px] px-[0px] m-[5px] h-[100vh] ">
            <Link to="/login"> 
              <button className="sidebarlogin-btn text-[#334EAC] font-sans 
              font-bold py-[5px] px-[13px] bg-[#D0E3FF] border-none rounded-[5px] cursor-pointer">
